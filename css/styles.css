@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url("../fonts/league-spartan.ttf");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/source-sans-3.ttf");
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/source-sans-3-italic.ttf");
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+:root {
+  --main-col: #fff;
+  --prim-col: #fb0;
+  --text-col: #202020;
+  --title-font: "League Spartan", Arial, sans-serif;
+  --text-font: "Source Sans 3", Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--title-font);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-color: var(--text-col);
+}
+
+.main-container {
+  margin: 1rem;
+  height: 90%;
+  width: 90%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  color: var(--main-col);
+}
+
+.footer {
+  color: var(--main-col);
+  padding: 1rem;
+  text-align: center;
+}
+
+.library {
+  margin: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+  display: flexbox;
+  background-color: var(--main-col);
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book-card {
+}
