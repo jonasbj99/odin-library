@@ -17,3 +17,9 @@ Library project from The Odin Project in the Organizing Your JavaScript Code sec
 - List sorting based on books being read or not
 
 - Images/thumbnails for each book listing
+
+- Possibility to edit existing books
+
+- More attributes for books, such as ratings
+
+- Statistics about pages, potential ratings, etc.
