@@ -14,6 +14,6 @@ Library project from The Odin Project in the Organizing Your JavaScript Code sec
 
 ## Considered Improvements
 
-- Sort by read or not
+- List sorting based on books being read or not
 
-- Book Images
+- Images/thumbnails for each book listing
