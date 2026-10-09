@@ -159,11 +159,16 @@ body {
     font-weight: 600;
     font-size: 1.2rem;
 
-    span {
-      display: contents;
-      color: var(--prim-col);
-      font-size: 0.8rem;
-      vertical-align: super;
+    .req-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        color: var(--prim-col);
+        font-size: 0.8rem;
+        vertical-align: super;
+      }
     }
   }
 
