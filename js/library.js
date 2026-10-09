@@ -104,7 +104,7 @@ function displayLibrary() {
 }
 
 function createBookCard(book, parent) {
-  if (false /* "content" in document.createElement("template") */) {
+  if ("content" in document.createElement("template")) {
     const template = document.querySelector("#card-template");
 
     const clone = document.importNode(template.content, true);
