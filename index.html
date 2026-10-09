@@ -4,17 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Library | JBJ</title>
+    <link rel="icon" type="image/x-icon" href="./img/jbj-logo.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e639c0bb0f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/library.js" defer></script>
   </head>
   <body>
+    <dialog id="newBookModal" class="modal" closedby="any">
+      <h2>Add a Book</h2>
+      <form id="newBookForm">
+        <!-- ADD REQUIRED VISUAL -->
+        <label for="titleInput">
+          Title:
+          <input id="titleInput" type="text" required />
+        </label>
+        <label for="authorInput">
+          Author:
+          <input id="authorInput" type="text" required />
+        </label>
+        <label for="pagesInput">
+          Pages:
+          <input id="pagesInput" type="number" />
+        </label>
+        <button class="btn">Add Book</button>
+      </form>
+      <button class="close-btn" commandfor="newBookModal" command="close">
+        &#10006;
+      </button>
+    </dialog>
+
     <div class="main-container">
       <header class="header">
-        <p>TEST TEXT</p>
+        <h1>Book List</h1>
+        <button class="btn disabled" id="removeToggleBtn">
+          Enable Removal
+        </button>
+        <button class="btn" commandfor="newBookModal" command="show-modal">
+          Add Book
+        </button>
       </header>
-      <main class="library"></main>
+      <div class="lib-outer">
+        <input id="removeToggleCheck" type="checkbox" />
+        <main id="library"></main>
+        <template id="card-template">
+          <div class="book-card">
+            <div class="book-info">
+              <p class="book-title"></p>
+              <p class="book-author"></p>
+              <p class="book-pages"></p>
+            </div>
+            <div class="book-actions">
+              <button class="btn book-remove">Remove</button>
+              <label class="book-read">
+                Read
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </template>
+      </div>
       <footer class="footer">
-        <p>TEST TEXT</p>
+        <!-- !!! ADD CONTACT/LINKs -->
+        <a class="contact-link" href="https://github.com/jonasbj99">
+          <i class="fa-brands fa-github"></i>
+          jonasbj99
+        </a>
       </footer>
     </div>
   </body>
